@@ -25,3 +25,23 @@ $ heroku create
 pour laisser heroku donner un nom
 
 ![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/herokucreateapp.png)
+
+# creation d'un fichier runtimes.txt a la racine du projet
+# noter dedans la version de python utiliser pour le projet avec la commande :
+$ python -V
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/runtimes.png)
+
+noter dans le fichier la version avec python en miniscule et un tirer du six entre python et la version 
+# installation de gunicorn avec la commande :
+$ pip install gunicorn 
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/gunicorn.png)
+
+# creation d'un fichier requirements.txt a la racine du projet avec la commande :
+
+$ pip freeze > requirements.txt
+
+supprimer  pkg-resources==0.0.0 si problemme signaler lors du push
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/requirements.png)
+
+cela incluera tous les utiliser pour faire tourner l'app
+# creation dun fichier procfile sans extention a la racine du projet
