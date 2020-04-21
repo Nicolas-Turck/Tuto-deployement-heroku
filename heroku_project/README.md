@@ -45,3 +45,30 @@ supprimer  pkg-resources==0.0.0 si problemme signaler lors du push
 
 cela incluera tous packages les utiliser pour faire tourner l'app 
 # creation dun fichier Procfile sans extention a la racine du projet
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/procfile.png)
+
+# declarer debug a false dans settings.py
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/debug.png)
+
+# rassembler les fichier static dans un dossier ecrire dans settings.py :
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/staticroot.png)
+
+
+# collecter les fichier static avec la commande :
+$ python manage.py collecstatic
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/collectstatic.png)
+
+# ajouter  commiter et pusher sur heroku
+
+$ git add -A
+
+$ git commit -m "add app in heroku"
+
+$ heroku git:remote -a testederherokuapptuto
+
+$ git push origin master
+
+![alt text](https://raw.githubusercontent.com/Nicolas-Turck/Tuto-deployement-heroku/master/heroku_project/media/pushheroku.png)
+
+
+ 
