@@ -3,7 +3,7 @@
 ## tuto deploiement heroku
 
 
-Tuto complet à cette adresse https://www.nicolas-turck.fr/deploiement-dune-application-sur-heroku 
+Tuto complet à cette adresse https://www.1site1ternet.fr/deploiement-dune-application-sur-heroku/
 
 
  
